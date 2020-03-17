@@ -76,13 +76,13 @@ timezone:
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://{organization}.{domain}/
-root: /blog/
+root: /
 permalink: :permlink/
 permalink_defaults:
 
 # Directory
 source_dir: source
-public_dir: public/@{author}
+public_dir: public
 tag_dir: tags
 archive_dir: archives
 category_dir: categories
