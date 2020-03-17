@@ -70,7 +70,7 @@ The project is open sourced under MIT license.
 ### Step by Step (deploy)
 1. check your blog/message.py
     * check type and repository_link, branch in deploy
-2. pipenv run invoke blog.download -a jacobyu
+2. pipenv run invoke blog.download -a steem_account
 3. pipenv run invoke blog.deploy
 
 ### Step by Step (auto depoly)
@@ -79,7 +79,6 @@ The project is open sourced under MIT license.
 2. create source repo
 3. generate github token 
 4. travis environment variable setting
-- https://github.com/twofastlane/blog/blob/master/.travis/env.md
-
-
-
+    * https://github.com/twofastlane/blog/blob/master/.travis/env.md
+5. check BLOG_ORGANIZATION on builder.py
+6. daily crontab setting
