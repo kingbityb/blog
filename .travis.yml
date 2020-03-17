@@ -14,7 +14,7 @@ script:
 
 branches:
   only:
-    - v1.0
+    - master
 
 # env:
   # - PIPENV_CACHE_DIR=.pipenv
