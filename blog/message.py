@@ -146,8 +146,8 @@ theme: icarus
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: https://github.com/{organization}/blog.git
-  branch: gh-pages
+  repository: https://github.com/{organization}/{organization}.github.io.git
+  branch: master
 
 marked:
   gfm: true

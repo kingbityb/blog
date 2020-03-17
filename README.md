@@ -68,6 +68,12 @@ The project is open sourced under MIT license.
 10. pipenv run invoke blog.test
 
 ### Step by Step (deploy)
+1. check your blog/message.py
+    * check type and repository_link, branch in deploy
+2. pipenv run invoke blog.download -a jacobyu
+3. pipenv run invoke blog.deploy
+
+### Step by Step (auto depoly)
 
 1. create github_account.github.io repo
 2. create source repo
