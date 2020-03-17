@@ -71,5 +71,9 @@ The project is open sourced under MIT license.
 
 1. create github_account.github.io repo
 2. create source repo
-3. travis environment variable setting
+3. generate github token 
+4. travis environment variable setting
+- https://github.com/twofastlane/blog/blob/master/.travis/env.md
+
+
 
