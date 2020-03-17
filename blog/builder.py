@@ -16,7 +16,7 @@ from utils.system.date import get_uct_time_str
 from blog.message import get_message
 
 
-BLOG_ORGANIZATION = "donekim"
+BLOG_ORGANIZATION = "twofastlane"
 BLOG_AVATAR = "https://avatars0.githubusercontent.com/u/50857551?s=200&v=4"
 BLOG_FAVICON = "https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32"
 
@@ -130,13 +130,13 @@ class BlogBuilder(SteemReader):
             return "github.io"
 
     def _get_blog_url(self):
-        return "https://{}.{}/@{}".format(self.account, self._get_domain(), self.account)
+        return "https://{}.{}/@{}".format(BLOG_ORGANIZATION, self._get_domain(), self.account)
 
     def _get_source_repo_url(self):
         return "{}/tree/{}".format(self._get_repo(), self.blog_folder)
 
     def _get_repo(self, prefix=True):
-        repo = "{0}/{0}.github.io".format(self.account)
+        repo = "{0}/{0}.github.io".format(BLOG_ORGANIZATION)
         if prefix:
             repo = "https://github.com/" + repo
         return repo
@@ -146,7 +146,7 @@ class BlogBuilder(SteemReader):
             return
 
         domain = self._get_domain()
-        organization = self.account
+        organization = BLOG_ORGANIZATION
         logo = BLOG_AVATAR
         favicon = BLOG_FAVICON
 
